@@ -10,8 +10,6 @@
 
 namespace Bcs\HeroTextBundle;
 
-use Contao\ContentText
-
 class ContentHeroText extends \ContentText
 {
 
@@ -25,8 +23,8 @@ class ContentHeroText extends \ContentText
 	/**
 	 * Generate the content element
 	 */
-	protected function compile()
+	public function compile()
 	{
-		return;
+		parent::compile();
 	}
 }
