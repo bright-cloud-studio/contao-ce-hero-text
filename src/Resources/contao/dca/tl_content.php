@@ -15,13 +15,10 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['hero_text'] = '{type_legend},type,
 
 $arrFields = array(
     'buttonLink'                => array(
-        'label'      => &$GLOBALS['TL_LANG']['tl_content']['buttonLink'],
-        'exclude'    => true,
-        'inputType'  => 'pageTree',
-        'foreignKey' => 'tl_page.title',
-        'eval'       => array('mandatory' => false, 'fieldType' => 'radio'),
-        'sql'        => "int(10) unsigned NOT NULL default '0'",
-        'relation'   => array('type' => 'belongsTo', 'load' => 'lazy'),
+        'label'                => &$GLOBALS['TL_LANG']['tl_content']['buttonLink'],
+        'inputType'            => 'text',
+        'eval'                 => array('mandatory'=>false, 'maxlength'=>255, 'feEditable'=>true, 'feViewable'=>true, 'feGroup'=>'personal', 'tl_class'=>'w50'),
+        'sql'                  => "varchar(255) NOT NULL default ''"
     )
 );
 
