@@ -22,8 +22,7 @@ class Plugin implements BundlePluginInterface
     {
         return [
             BundleConfig::create('Bcs\HeroTextBundle\BcsHeroTextBundle')
-                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
-                ->setReplace(['hero_text']),
+                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
         ];
     }
 }
