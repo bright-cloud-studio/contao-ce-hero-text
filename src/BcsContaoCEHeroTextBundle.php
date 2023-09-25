@@ -12,11 +12,6 @@ namespace Bcs\ContaoCEHeroTExt;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-/**
- * Configures the Contao divider bundle.
- *
- * @author Stefan Schulz-Lauterbach
- */
 class BcsContaoCEHeroTextBundle extends Bundle
 {
 }
