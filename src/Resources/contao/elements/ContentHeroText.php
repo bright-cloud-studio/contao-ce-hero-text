@@ -8,7 +8,7 @@
  * @see	       https://github.com/bright-cloud-studio/contao-ce-hero-text
  */
 
-namespace Bcs\ContaoCEHeroTextBundle;
+namespace Bcs\HeroTextBundle;
 
 
 class ContentHeroText extends \ContentElement
