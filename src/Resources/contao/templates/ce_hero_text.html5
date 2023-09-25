@@ -1,1 +1,24 @@
-<div class="<?php echo $this->class; ?>"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>><hr></div>
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <?php if (!$this->addBefore): ?>
+  <div class="text"> <?php /* added wrapper */ ?>
+    <?= $this->text ?>
+   </div>
+  <?php endif; ?>
+
+  <?php if ($this->addImage): ?>
+    <?php $this->insert('image', $this->arrData); ?>
+  <?php endif; ?>
+
+  <?php if ($this->addBefore): ?>
+  <div class="text"> <?php /* added wrapper */ ?>
+    <?= $this->text ?>
+    </div>
+  <?php endif; ?>
+  
+  <div class="play_button"><a href="https://www.youtube.com/watch?v=urhsYepFqs0" class="fresco"><i class="fa-solid fa-circle-play"></i><span class="invisible">Play Video</span></a></div>
+  <div class="test">TEST TEST TEST</div>
+
+<?php $this->endblock(); ?>
