@@ -8,7 +8,7 @@
  * @see	       https://github.com/bright-cloud-studio/contao-ce-hero-text
  */
 
-namespace Bcs\ContaoCEHeroText\ContaoManager;
+namespace Bcs\HeroTextBundle\ContaoManager;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
@@ -21,9 +21,9 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Bcs\ContaoCEHeroText\BcsContaoCEHeroTextBundle')
+            BundleConfig::create('Bcs\HeroTextBundle\BcsHeroTextBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
-                ->setReplace(['divider']),
+                ->setReplace(['hero_text']),
         ];
     }
 }
