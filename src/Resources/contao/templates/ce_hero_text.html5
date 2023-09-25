@@ -18,7 +18,14 @@
     </div>
   <?php endif; ?>
   
-  <div class="play_button"><a href="https://www.youtube.com/watch?v=urhsYepFqs0" class="fresco"><i class="fa-solid fa-circle-play"></i><span class="invisible">Play Video</span></a></div>
-  <div class="test">TEST TEST TEST</div>
+   <?php // Adds our customized 'buttonLink' field to the template if it is being used ?>
+   <?php if ($this->buttonLink): ?>
+   <div class="play_button">
+      <a href="{{link_url::<?= $this->buttonLink ?>}}" class="fresco">
+         <i class="fa-solid fa-circle-play"></i><span class="invisible">Play Video</span>
+      </a>
+   </div>
+   <?php endif; ?>
 
+  
 <?php $this->endblock(); ?>
