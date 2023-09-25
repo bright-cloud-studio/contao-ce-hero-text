@@ -8,10 +8,10 @@
  * @see	       https://github.com/bright-cloud-studio/contao-ce-hero-text
  */
 
-namespace Bcs\ContaoCEHeroTExt;
+namespace Bcs\HeroTextBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class BcsContaoCEHeroTextBundle extends Bundle
+class BcsHeroTextBundle extends Bundle
 {
 }
