@@ -1,36 +1,49 @@
 {
     "name":"bright-cloud-studio/contao-ce-hero-text",
+    "type": "contao-bundle",
     "description":"Adds a new Hero Text content element type to Contao.",
     "homepage": "http://brightcloudstudio.com/",
-    "keywords":["content", "element", "contao", "bright", "cloud", "studio"],
-    "type":"contao-module",
-    "license":"LGPL-3.0-or-later",
-    "authors":[
+    "license": "LGPL-3.0-or-later",
+    "keywords": [
+        "contao",
+        "content element",
+        "bright",
+        "cloud",
+        "studio"
+    ],
+    "authors": [
         {
-            "name":"Bright Cloud Studio",
-            "homepage":"https://brightcloudstudio.com"
+            "name": "Bright Cloud Studio",
+            "homepage": "https://brightcloudstudio.com",
+            "email": "mark@brightcloudstudio.com",
+            "role": "Developer"
         }
     ],
-    "require":{
-        "php": "^8.0",
+    "support": {
+        "issues": "https://github.com/bright-cloud-studio/contao-ce-hero-text/issues",
+        "source": "https://github.com/bright-cloud-studio/contao-ce-hero-text"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
         "contao/core-bundle": "^4.13"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0"
     },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
     "autoload": {
         "psr-4": {
-            "Bcs\\": [
-                "system/modules/contao_ce_hero_text/library/Bcs"
-            ]
+            "Bcs\\ContaoCEHeroText\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao/manager-plugin": true
         }
     },
     "extra": {
-        "contao": {
-            "sources": {
-                "system/modules/contao_ce_hero_text": "system/modules/contao_ce_hero_text"
-            }
-        }
-    },
-    "minimum-stability": "dev"
+        "contao-manager-plugin": "Bcs\\ContaoCEHeroText\\ContaoManager\\Plugin"
+    }
 }
