@@ -22,11 +22,11 @@
         "contao/core-bundle": "^4.13"
     },
     "extra":{
-        "contao-manager-plugin": "Bcs\\ContaoCEHeroText\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Bcs\\HeroTextBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
-            "Bcs\\ContaoCEHeroText\\": "src"
+            "Bcs\\HeroTextBundle\\": "src"
         },
         "classmap": [
             "src/Resources/contao"
