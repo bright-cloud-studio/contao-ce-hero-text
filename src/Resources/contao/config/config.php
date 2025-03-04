@@ -8,6 +8,6 @@
  * @see	       https://github.com/bright-cloud-studio/contao-ce-hero-text
  */
 
-//$GLOBALS['TL_CTE']['texts']['hero_text'] = 'Bcs\HeroTextBundle\ContentHeroText';
+$GLOBALS['TL_CTE']['texts']['hero_text'] = 'Bcs\HeroTextBundle\ContentHeroText';
 
 ?>
