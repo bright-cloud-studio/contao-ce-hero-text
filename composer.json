@@ -18,8 +18,8 @@
         "source": "https://github.com/bright-cloud-studio/contao-ce-hero-text"
     },
     "require":{
-        "php": "^7.4 || ^8.0",
-        "contao/core-bundle": "^4.13"
+        "php": "^7.3 || ^8.0",
+        "contao/core-bundle": "^4.9 || ^5.3"
     },
     "extra":{
         "contao-manager-plugin": "Bcs\\HeroTextBundle\\ContaoManager\\Plugin"
