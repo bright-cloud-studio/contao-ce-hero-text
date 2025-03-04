@@ -10,7 +10,9 @@
 
 namespace Bcs\HeroTextBundle;
 
-class ContentText extends \ContentElement
+use Contao\ContentText;
+
+class ContentHeroText extends ContentText
 {
 	/**
 	 * Template
