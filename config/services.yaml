@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Bcs\HeroTextBundle\:
+        resource: ../src/
+        exclude:
+            - ../src/BcsHeroTextBundle.php
+            - ../src/ContaoManager/
+            - ../src/DependencyInjection/
