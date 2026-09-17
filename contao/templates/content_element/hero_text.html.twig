@@ -1,0 +1,21 @@
+{% extends '@Contao/content_element/text.html.twig' %}
+
+{# Keep the ".text" hook the client CSS targets on the rich text wrapper #}
+{% set text_attributes = attrs(text_attributes|default)
+    .addClass('text')
+%}
+
+{% block content %}
+    {{ parent() }}
+
+    {# Only render the button once an editor picked a page we can actually link to #}
+    {% set button_url = button_page ? content_url(button_page) : null %}
+
+    {% if button_url %}
+        <div class="play_button">
+            <a href="{{ button_url }}" class="fresco">
+                <i class="fa-solid fa-circle-play"></i><span class="invisible">Play Video</span>
+            </a>
+        </div>
+    {% endif %}
+{% endblock %}
