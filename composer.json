@@ -1,10 +1,10 @@
 {
     "name":"bright-cloud-studio/contao-ce-hero-text",
     "description":"Adds a new Hero Text content element type to Contao.",
-    "keywords": ["contao", "content element", "bright", "cloud", "studio"],
+    "keywords": ["contao", "content element", "hero", "text", "bright", "cloud", "studio"],
     "type": "contao-bundle",
-    "homepage": "http://brightcloudstudio.com/",
-    "license": "LGPL-3.0+",
+    "homepage": "https://brightcloudstudio.com/",
+    "license": "MIT",
     "authors":[
         {
             "name": "Bright Cloud Studio",
@@ -18,8 +18,8 @@
         "source": "https://github.com/bright-cloud-studio/contao-ce-hero-text"
     },
     "require":{
-        "php": "^7.3 || ^8.0",
-        "contao/core-bundle": "^4.9 || ^5.3"
+        "php": "^8.3",
+        "contao/core-bundle": "^5.7"
     },
     "extra":{
         "contao-manager-plugin": "Bcs\\HeroTextBundle\\ContaoManager\\Plugin"
@@ -27,15 +27,6 @@
     "autoload": {
         "psr-4": {
             "Bcs\\HeroTextBundle\\": "src"
-        },
-        "classmap": [
-            "src/Resources/contao"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config/",
-            "src/Resources/contao/dca/",
-            "src/Resources/contao/languages/",
-            "src/Resources/contao/templates/"
-        ]
+        }
     }
 }
