@@ -17,8 +17,9 @@ class BcsHeroTextBundle extends Bundle
     /**
      * Override getPath() to return the bundle root (parent of src/).
      * This tells Contao to look for resources in contao/dca/,
-     * contao/languages/ and contao/templates/ at the bundle root,
-     * which correctly preserves subdirectory structure for Twig templates.
+     * contao/languages/ and contao/templates/ at the bundle root.
+     * Twig subfolder names like content_element/ are kept by the empty
+     * contao/templates/.twig-root marker, not by this override.
      */
     public function getPath(): string
     {
